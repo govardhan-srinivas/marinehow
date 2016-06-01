@@ -1,0 +1,1 @@
+web: gunicorn marinehowscript.wsgi --log-file -

@@ -1,0 +1,1732 @@
+DEBUG:root:{'default': {'NAME': 'mjoneill', 'PORT': '5432', 'USER': 'mjoneill', 'ENGINE': 'django.db.backends.postgresql', 'PASSWORD': '', 'HOST': '127.0.0.1'}}
+DEBUG:root:{'default': {'ENGINE': 'django.db.backends.sqlite3', 'NAME': 'C:\\Users\\Olek\\Desktop\\marinehow-master\\db.sqlite3'}}
+DEBUG:root:{'default': {'ENGINE': 'django.db.backends.sqlite3', 'NAME': 'C:\\Users\\Olek\\Desktop\\marinehow-master\\db.sqlite3'}}
+WARNING:py.warnings:C:\Python34\lib\importlib\_bootstrap.py:321: RemovedInDjango110Warning: django.core.context_processors is deprecated in favor of django.template.context_processors.
+  return f(*args, **kwds)
+
+DEBUG:root:{'default': {'NAME': 'C:\\Users\\Olek\\Desktop\\marinehow-master\\db.sqlite3', 'ENGINE': 'django.db.backends.sqlite3'}}
+WARNING:py.warnings:C:\Python34\lib\importlib\_bootstrap.py:321: RemovedInDjango110Warning: django.core.context_processors is deprecated in favor of django.template.context_processors.
+  return f(*args, **kwds)
+
+DEBUG:root:{'default': {'ENGINE': 'django.db.backends.sqlite3', 'NAME': 'C:\\Users\\Olek\\Desktop\\marinehow-master\\db.sqlite3'}}
+WARNING:py.warnings:C:\Python34\lib\importlib\_bootstrap.py:321: RemovedInDjango110Warning: django.core.context_processors is deprecated in favor of django.template.context_processors.
+  return f(*args, **kwds)
+
+DEBUG:root:{'default': {'NAME': 'C:\\Users\\Olek\\Desktop\\marinehow-master\\db.sqlite3', 'ENGINE': 'django.db.backends.sqlite3'}}
+WARNING:py.warnings:C:\Python34\lib\importlib\_bootstrap.py:321: RemovedInDjango110Warning: django.core.context_processors is deprecated in favor of django.template.context_processors.
+  return f(*args, **kwds)
+
+DEBUG:root:{'default': {'ENGINE': 'django.db.backends.sqlite3', 'NAME': 'C:\\Users\\Olek\\Desktop\\marinehow-master\\db.sqlite3'}}
+WARNING:py.warnings:C:\Python34\lib\importlib\_bootstrap.py:321: RemovedInDjango110Warning: django.core.context_processors is deprecated in favor of django.template.context_processors.
+  return f(*args, **kwds)
+
+DEBUG:root:{'default': {'NAME': 'C:\\Users\\Olek\\Desktop\\marinehow-master\\db.sqlite3', 'ENGINE': 'django.db.backends.sqlite3'}}
+WARNING:py.warnings:C:\Python34\lib\importlib\_bootstrap.py:321: RemovedInDjango110Warning: django.core.context_processors is deprecated in favor of django.template.context_processors.
+  return f(*args, **kwds)
+
+DEBUG:root:{'default': {'ENGINE': 'django.db.backends.sqlite3', 'NAME': 'C:\\Users\\Olek\\Desktop\\marinehow-master\\db.sqlite3'}}
+DEBUG:root:{'default': {'NAME': 'C:\\Users\\Olek\\Desktop\\marinehow-master\\db.sqlite3', 'ENGINE': 'django.db.backends.sqlite3'}}
+WARNING:py.warnings:C:\Python34\lib\importlib\_bootstrap.py:321: RemovedInDjango110Warning: django.core.context_processors is deprecated in favor of django.template.context_processors.
+  return f(*args, **kwds)
+
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\django\template\utils.py", line 86, in __getitem__
+    return self._engines[alias]
+KeyError: 'django'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\django\template\backends\django.py", line 155, in get_package_libraries
+    module = import_module(entry[1])
+  File "C:\Python34\lib\importlib\__init__.py", line 109, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 2254, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 2237, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 2226, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1200, in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 1129, in _exec
+  File "<frozen importlib._bootstrap>", line 1471, in exec_module
+  File "<frozen importlib._bootstrap>", line 321, in _call_with_frames_removed
+  File "C:\Users\Olek\Desktop\marinehow-master\marinehow\templatetags\custom_template_tags.py", line 2, in <module>
+    from preguntas.models import Usuario
+ImportError: No module named 'preguntas'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\django\core\handlers\base.py", line 174, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Python34\lib\site-packages\django\core\handlers\base.py", line 172, in get_response
+    response = response.render()
+  File "C:\Python34\lib\site-packages\django\template\response.py", line 160, in render
+    self.content = self.rendered_content
+  File "C:\Python34\lib\site-packages\django\template\response.py", line 135, in rendered_content
+    template = self._resolve_template(self.template_name)
+  File "C:\Python34\lib\site-packages\django\template\response.py", line 90, in _resolve_template
+    new_template = self.resolve_template(template)
+  File "C:\Python34\lib\site-packages\django\template\response.py", line 80, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Python34\lib\site-packages\django\template\loader.py", line 55, in select_template
+    engines = _engine_list(using)
+  File "C:\Python34\lib\site-packages\django\template\loader.py", line 143, in _engine_list
+    return engines.all() if using is None else [engines[using]]
+  File "C:\Python34\lib\site-packages\django\template\utils.py", line 110, in all
+    return [self[alias] for alias in self]
+  File "C:\Python34\lib\site-packages\django\template\utils.py", line 110, in <listcomp>
+    return [self[alias] for alias in self]
+  File "C:\Python34\lib\site-packages\django\template\utils.py", line 101, in __getitem__
+    engine = engine_cls(params)
+  File "C:\Python34\lib\site-packages\django\template\backends\django.py", line 31, in __init__
+    options['libraries'] = self.get_templatetag_libraries(libraries)
+  File "C:\Python34\lib\site-packages\django\template\backends\django.py", line 49, in get_templatetag_libraries
+    libraries = get_installed_libraries()
+  File "C:\Python34\lib\site-packages\django\template\backends\django.py", line 142, in get_installed_libraries
+    for name in get_package_libraries(pkg):
+  File "C:\Python34\lib\site-packages\django\template\backends\django.py", line 159, in get_package_libraries
+    "trying to load '%s': %s" % (entry[1], e)
+django.template.library.InvalidTemplateLibrary: Invalid template library specified. ImportError raised when trying to load 'marinehow.templatetags.custom_template_tags': No module named 'preguntas'
+WARNING:django.request:Not Found: /favicon.ico
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\django\core\urlresolvers.py", line 586, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'marinehowscript.preguntas'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\django\template\defaulttags.py", line 507, in render
+    current_app=current_app)
+  File "C:\Python34\lib\site-packages\django\core\urlresolvers.py", line 596, in reverse
+    key)
+django.core.urlresolvers.NoReverseMatch: 'marinehowscript.preguntas' is not a registered namespace
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\django\core\handlers\base.py", line 174, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Python34\lib\site-packages\django\core\handlers\base.py", line 172, in get_response
+    response = response.render()
+  File "C:\Python34\lib\site-packages\django\template\response.py", line 160, in render
+    self.content = self.rendered_content
+  File "C:\Python34\lib\site-packages\django\template\response.py", line 137, in rendered_content
+    content = template.render(context, self._request)
+  File "C:\Python34\lib\site-packages\django\template\backends\django.py", line 95, in render
+    return self.template.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 206, in render
+    return self._render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "C:\Python34\lib\site-packages\django\template\loader_tags.py", line 173, in render
+    return compiled_parent._render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "C:\Python34\lib\site-packages\django\template\defaulttags.py", line 513, in render
+    six.reraise(*exc_info)
+  File "C:\Python34\lib\site-packages\django\utils\six.py", line 686, in reraise
+    raise value
+  File "C:\Python34\lib\site-packages\django\template\defaulttags.py", line 499, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Python34\lib\site-packages\django\core\urlresolvers.py", line 596, in reverse
+    key)
+django.core.urlresolvers.NoReverseMatch: 'preguntas' is not a registered namespace
+DEBUG:root:{'default': {'ENGINE': 'django.db.backends.sqlite3', 'NAME': 'C:\\Users\\Olek\\Desktop\\marinehow-master\\db.sqlite3'}}
+WARNING:py.warnings:C:\Python34\lib\importlib\_bootstrap.py:321: RemovedInDjango110Warning: django.core.context_processors is deprecated in favor of django.template.context_processors.
+  return f(*args, **kwds)
+
+DEBUG:root:{'default': {'ENGINE': 'django.db.backends.sqlite3', 'NAME': 'C:\\Users\\Olek\\Desktop\\marinehow-master\\db.sqlite3'}}
+DEBUG:root:{'default': {'NAME': 'C:\\Users\\Olek\\Desktop\\marinehow-master\\db.sqlite3', 'ENGINE': 'django.db.backends.sqlite3'}}
+WARNING:py.warnings:C:\Python34\lib\importlib\_bootstrap.py:321: RemovedInDjango110Warning: django.core.context_processors is deprecated in favor of django.template.context_processors.
+  return f(*args, **kwds)
+
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\django\core\urlresolvers.py", line 586, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'marinehowscript.preguntas'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\django\template\defaulttags.py", line 507, in render
+    current_app=current_app)
+  File "C:\Python34\lib\site-packages\django\core\urlresolvers.py", line 596, in reverse
+    key)
+django.core.urlresolvers.NoReverseMatch: 'marinehowscript.preguntas' is not a registered namespace
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\django\core\handlers\base.py", line 174, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Python34\lib\site-packages\django\core\handlers\base.py", line 172, in get_response
+    response = response.render()
+  File "C:\Python34\lib\site-packages\django\template\response.py", line 160, in render
+    self.content = self.rendered_content
+  File "C:\Python34\lib\site-packages\django\template\response.py", line 137, in rendered_content
+    content = template.render(context, self._request)
+  File "C:\Python34\lib\site-packages\django\template\backends\django.py", line 95, in render
+    return self.template.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 206, in render
+    return self._render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "C:\Python34\lib\site-packages\django\template\loader_tags.py", line 173, in render
+    return compiled_parent._render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "C:\Python34\lib\site-packages\django\template\defaulttags.py", line 513, in render
+    six.reraise(*exc_info)
+  File "C:\Python34\lib\site-packages\django\utils\six.py", line 686, in reraise
+    raise value
+  File "C:\Python34\lib\site-packages\django\template\defaulttags.py", line 499, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Python34\lib\site-packages\django\core\urlresolvers.py", line 596, in reverse
+    key)
+django.core.urlresolvers.NoReverseMatch: 'preguntas' is not a registered namespace
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\django\core\urlresolvers.py", line 586, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'marinehowscript.preguntas'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\django\template\defaulttags.py", line 507, in render
+    current_app=current_app)
+  File "C:\Python34\lib\site-packages\django\core\urlresolvers.py", line 596, in reverse
+    key)
+django.core.urlresolvers.NoReverseMatch: 'marinehowscript.preguntas' is not a registered namespace
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\django\core\handlers\base.py", line 174, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Python34\lib\site-packages\django\core\handlers\base.py", line 172, in get_response
+    response = response.render()
+  File "C:\Python34\lib\site-packages\django\template\response.py", line 160, in render
+    self.content = self.rendered_content
+  File "C:\Python34\lib\site-packages\django\template\response.py", line 137, in rendered_content
+    content = template.render(context, self._request)
+  File "C:\Python34\lib\site-packages\django\template\backends\django.py", line 95, in render
+    return self.template.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 206, in render
+    return self._render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "C:\Python34\lib\site-packages\django\template\loader_tags.py", line 173, in render
+    return compiled_parent._render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "C:\Python34\lib\site-packages\django\template\defaulttags.py", line 513, in render
+    six.reraise(*exc_info)
+  File "C:\Python34\lib\site-packages\django\utils\six.py", line 686, in reraise
+    raise value
+  File "C:\Python34\lib\site-packages\django\template\defaulttags.py", line 499, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Python34\lib\site-packages\django\core\urlresolvers.py", line 596, in reverse
+    key)
+django.core.urlresolvers.NoReverseMatch: 'preguntas' is not a registered namespace
+DEBUG:root:{'default': {'ENGINE': 'django.db.backends.sqlite3', 'NAME': 'C:\\Users\\Olek\\Desktop\\marinehow-master - Copy\\db.sqlite3'}}
+DEBUG:root:{'default': {'NAME': 'C:\\Users\\Olek\\Desktop\\marinehow-master - Copy\\db.sqlite3', 'ENGINE': 'django.db.backends.sqlite3'}}
+WARNING:py.warnings:C:\Python34\lib\importlib\_bootstrap.py:321: RemovedInDjango110Warning: django.core.context_processors is deprecated in favor of django.template.context_processors.
+  return f(*args, **kwds)
+
+DEBUG:root:{'default': {'NAME': 'C:\\Users\\Olek\\Desktop\\marinehow-master - Copy\\db.sqlite3', 'ENGINE': 'django.db.backends.sqlite3'}}
+WARNING:py.warnings:C:\Python34\lib\importlib\_bootstrap.py:321: RemovedInDjango110Warning: django.core.context_processors is deprecated in favor of django.template.context_processors.
+  return f(*args, **kwds)
+
+DEBUG:root:{'default': {'NAME': 'C:\\Users\\Olek\\Desktop\\marinehow-master - Copy\\db.sqlite3', 'ENGINE': 'django.db.backends.sqlite3'}}
+WARNING:py.warnings:C:\Python34\lib\importlib\_bootstrap.py:321: RemovedInDjango110Warning: django.core.context_processors is deprecated in favor of django.template.context_processors.
+  return f(*args, **kwds)
+
+DEBUG:root:{'default': {'NAME': 'C:\\Users\\Olek\\Desktop\\marinehow-master - Copy\\db.sqlite3', 'ENGINE': 'django.db.backends.sqlite3'}}
+DEBUG:root:{'default': {'ENGINE': 'django.db.backends.sqlite3', 'NAME': 'C:\\Users\\Olek\\Desktop\\marinehow-master - Copy\\db.sqlite3'}}
+WARNING:py.warnings:C:\Python34\lib\importlib\_bootstrap.py:321: RemovedInDjango110Warning: django.core.context_processors is deprecated in favor of django.template.context_processors.
+  return f(*args, **kwds)
+
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\django\core\urlresolvers.py", line 586, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'marinehowscript.preguntas'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\django\template\defaulttags.py", line 507, in render
+    current_app=current_app)
+  File "C:\Python34\lib\site-packages\django\core\urlresolvers.py", line 596, in reverse
+    key)
+django.core.urlresolvers.NoReverseMatch: 'marinehowscript.preguntas' is not a registered namespace
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\django\core\handlers\base.py", line 174, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Python34\lib\site-packages\django\core\handlers\base.py", line 172, in get_response
+    response = response.render()
+  File "C:\Python34\lib\site-packages\django\template\response.py", line 160, in render
+    self.content = self.rendered_content
+  File "C:\Python34\lib\site-packages\django\template\response.py", line 137, in rendered_content
+    content = template.render(context, self._request)
+  File "C:\Python34\lib\site-packages\django\template\backends\django.py", line 95, in render
+    return self.template.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 206, in render
+    return self._render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "C:\Python34\lib\site-packages\django\template\loader_tags.py", line 173, in render
+    return compiled_parent._render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "C:\Python34\lib\site-packages\django\template\defaulttags.py", line 513, in render
+    six.reraise(*exc_info)
+  File "C:\Python34\lib\site-packages\django\utils\six.py", line 686, in reraise
+    raise value
+  File "C:\Python34\lib\site-packages\django\template\defaulttags.py", line 499, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Python34\lib\site-packages\django\core\urlresolvers.py", line 596, in reverse
+    key)
+django.core.urlresolvers.NoReverseMatch: 'preguntas' is not a registered namespace
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\django\core\urlresolvers.py", line 586, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'marinehowscript.preguntas'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\django\template\defaulttags.py", line 507, in render
+    current_app=current_app)
+  File "C:\Python34\lib\site-packages\django\core\urlresolvers.py", line 596, in reverse
+    key)
+django.core.urlresolvers.NoReverseMatch: 'marinehowscript.preguntas' is not a registered namespace
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\django\core\handlers\base.py", line 174, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Python34\lib\site-packages\django\core\handlers\base.py", line 172, in get_response
+    response = response.render()
+  File "C:\Python34\lib\site-packages\django\template\response.py", line 160, in render
+    self.content = self.rendered_content
+  File "C:\Python34\lib\site-packages\django\template\response.py", line 137, in rendered_content
+    content = template.render(context, self._request)
+  File "C:\Python34\lib\site-packages\django\template\backends\django.py", line 95, in render
+    return self.template.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 206, in render
+    return self._render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "C:\Python34\lib\site-packages\django\template\loader_tags.py", line 173, in render
+    return compiled_parent._render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "C:\Python34\lib\site-packages\django\template\defaulttags.py", line 513, in render
+    six.reraise(*exc_info)
+  File "C:\Python34\lib\site-packages\django\utils\six.py", line 686, in reraise
+    raise value
+  File "C:\Python34\lib\site-packages\django\template\defaulttags.py", line 499, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Python34\lib\site-packages\django\core\urlresolvers.py", line 596, in reverse
+    key)
+django.core.urlresolvers.NoReverseMatch: 'preguntas' is not a registered namespace
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\django\core\urlresolvers.py", line 586, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'marinehowscript.preguntas'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\django\template\defaulttags.py", line 507, in render
+    current_app=current_app)
+  File "C:\Python34\lib\site-packages\django\core\urlresolvers.py", line 596, in reverse
+    key)
+django.core.urlresolvers.NoReverseMatch: 'marinehowscript.preguntas' is not a registered namespace
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\django\core\handlers\base.py", line 174, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Python34\lib\site-packages\django\core\handlers\base.py", line 172, in get_response
+    response = response.render()
+  File "C:\Python34\lib\site-packages\django\template\response.py", line 160, in render
+    self.content = self.rendered_content
+  File "C:\Python34\lib\site-packages\django\template\response.py", line 137, in rendered_content
+    content = template.render(context, self._request)
+  File "C:\Python34\lib\site-packages\django\template\backends\django.py", line 95, in render
+    return self.template.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 206, in render
+    return self._render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "C:\Python34\lib\site-packages\django\template\loader_tags.py", line 173, in render
+    return compiled_parent._render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "C:\Python34\lib\site-packages\django\template\defaulttags.py", line 513, in render
+    six.reraise(*exc_info)
+  File "C:\Python34\lib\site-packages\django\utils\six.py", line 686, in reraise
+    raise value
+  File "C:\Python34\lib\site-packages\django\template\defaulttags.py", line 499, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Python34\lib\site-packages\django\core\urlresolvers.py", line 596, in reverse
+    key)
+django.core.urlresolvers.NoReverseMatch: 'preguntas' is not a registered namespace
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\django\core\urlresolvers.py", line 586, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'marinehowscript.preguntas'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\django\template\defaulttags.py", line 507, in render
+    current_app=current_app)
+  File "C:\Python34\lib\site-packages\django\core\urlresolvers.py", line 596, in reverse
+    key)
+django.core.urlresolvers.NoReverseMatch: 'marinehowscript.preguntas' is not a registered namespace
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\django\core\handlers\base.py", line 174, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Python34\lib\site-packages\django\core\handlers\base.py", line 172, in get_response
+    response = response.render()
+  File "C:\Python34\lib\site-packages\django\template\response.py", line 160, in render
+    self.content = self.rendered_content
+  File "C:\Python34\lib\site-packages\django\template\response.py", line 137, in rendered_content
+    content = template.render(context, self._request)
+  File "C:\Python34\lib\site-packages\django\template\backends\django.py", line 95, in render
+    return self.template.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 206, in render
+    return self._render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "C:\Python34\lib\site-packages\django\template\loader_tags.py", line 173, in render
+    return compiled_parent._render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "C:\Python34\lib\site-packages\django\template\defaulttags.py", line 513, in render
+    six.reraise(*exc_info)
+  File "C:\Python34\lib\site-packages\django\utils\six.py", line 686, in reraise
+    raise value
+  File "C:\Python34\lib\site-packages\django\template\defaulttags.py", line 499, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Python34\lib\site-packages\django\core\urlresolvers.py", line 596, in reverse
+    key)
+django.core.urlresolvers.NoReverseMatch: 'preguntas' is not a registered namespace
+DEBUG:root:{'default': {'ENGINE': 'django.db.backends.sqlite3', 'NAME': 'C:\\Users\\Olek\\Desktop\\marinehow-master - Copy\\db.sqlite3'}}
+WARNING:py.warnings:C:\Python34\lib\importlib\_bootstrap.py:321: RemovedInDjango110Warning: django.core.context_processors is deprecated in favor of django.template.context_processors.
+  return f(*args, **kwds)
+
+DEBUG:root:{'default': {'NAME': 'C:\\Users\\Olek\\Desktop\\marinehow-master - Copy\\db.sqlite3', 'ENGINE': 'django.db.backends.sqlite3'}}
+DEBUG:root:{'default': {'ENGINE': 'django.db.backends.sqlite3', 'NAME': 'C:\\Users\\Olek\\Desktop\\marinehow-master - Copy\\db.sqlite3'}}
+WARNING:py.warnings:C:\Python34\lib\importlib\_bootstrap.py:321: RemovedInDjango110Warning: django.core.context_processors is deprecated in favor of django.template.context_processors.
+  return f(*args, **kwds)
+
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\django\core\urlresolvers.py", line 586, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'marinehowscript.preguntas'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\django\template\defaulttags.py", line 507, in render
+    current_app=current_app)
+  File "C:\Python34\lib\site-packages\django\core\urlresolvers.py", line 596, in reverse
+    key)
+django.core.urlresolvers.NoReverseMatch: 'marinehowscript.preguntas' is not a registered namespace
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\django\core\handlers\base.py", line 174, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Python34\lib\site-packages\django\core\handlers\base.py", line 172, in get_response
+    response = response.render()
+  File "C:\Python34\lib\site-packages\django\template\response.py", line 160, in render
+    self.content = self.rendered_content
+  File "C:\Python34\lib\site-packages\django\template\response.py", line 137, in rendered_content
+    content = template.render(context, self._request)
+  File "C:\Python34\lib\site-packages\django\template\backends\django.py", line 95, in render
+    return self.template.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 206, in render
+    return self._render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "C:\Python34\lib\site-packages\django\template\loader_tags.py", line 173, in render
+    return compiled_parent._render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "C:\Python34\lib\site-packages\django\template\defaulttags.py", line 513, in render
+    six.reraise(*exc_info)
+  File "C:\Python34\lib\site-packages\django\utils\six.py", line 686, in reraise
+    raise value
+  File "C:\Python34\lib\site-packages\django\template\defaulttags.py", line 499, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Python34\lib\site-packages\django\core\urlresolvers.py", line 596, in reverse
+    key)
+django.core.urlresolvers.NoReverseMatch: 'preguntas' is not a registered namespace
+DEBUG:root:{'default': {'NAME': 'C:\\Users\\Olek\\Desktop\\marinehow-master - Copy\\db.sqlite3', 'ENGINE': 'django.db.backends.sqlite3'}}
+WARNING:py.warnings:C:\Python34\lib\importlib\_bootstrap.py:321: RemovedInDjango110Warning: django.core.context_processors is deprecated in favor of django.template.context_processors.
+  return f(*args, **kwds)
+
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\django\core\urlresolvers.py", line 586, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'marinehowscript.preguntas'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\django\template\defaulttags.py", line 507, in render
+    current_app=current_app)
+  File "C:\Python34\lib\site-packages\django\core\urlresolvers.py", line 596, in reverse
+    key)
+django.core.urlresolvers.NoReverseMatch: 'marinehowscript.preguntas' is not a registered namespace
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\django\core\handlers\base.py", line 174, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Python34\lib\site-packages\django\core\handlers\base.py", line 172, in get_response
+    response = response.render()
+  File "C:\Python34\lib\site-packages\django\template\response.py", line 160, in render
+    self.content = self.rendered_content
+  File "C:\Python34\lib\site-packages\django\template\response.py", line 137, in rendered_content
+    content = template.render(context, self._request)
+  File "C:\Python34\lib\site-packages\django\template\backends\django.py", line 95, in render
+    return self.template.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 206, in render
+    return self._render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "C:\Python34\lib\site-packages\django\template\loader_tags.py", line 173, in render
+    return compiled_parent._render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "C:\Python34\lib\site-packages\django\template\defaulttags.py", line 513, in render
+    six.reraise(*exc_info)
+  File "C:\Python34\lib\site-packages\django\utils\six.py", line 686, in reraise
+    raise value
+  File "C:\Python34\lib\site-packages\django\template\defaulttags.py", line 499, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Python34\lib\site-packages\django\core\urlresolvers.py", line 596, in reverse
+    key)
+django.core.urlresolvers.NoReverseMatch: 'preguntas' is not a registered namespace
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\django\core\urlresolvers.py", line 586, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'marinehowscript.preguntas'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\django\template\defaulttags.py", line 507, in render
+    current_app=current_app)
+  File "C:\Python34\lib\site-packages\django\core\urlresolvers.py", line 596, in reverse
+    key)
+django.core.urlresolvers.NoReverseMatch: 'marinehowscript.preguntas' is not a registered namespace
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\django\core\handlers\base.py", line 174, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Python34\lib\site-packages\django\core\handlers\base.py", line 172, in get_response
+    response = response.render()
+  File "C:\Python34\lib\site-packages\django\template\response.py", line 160, in render
+    self.content = self.rendered_content
+  File "C:\Python34\lib\site-packages\django\template\response.py", line 137, in rendered_content
+    content = template.render(context, self._request)
+  File "C:\Python34\lib\site-packages\django\template\backends\django.py", line 95, in render
+    return self.template.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 206, in render
+    return self._render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "C:\Python34\lib\site-packages\django\template\loader_tags.py", line 173, in render
+    return compiled_parent._render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "C:\Python34\lib\site-packages\django\template\defaulttags.py", line 513, in render
+    six.reraise(*exc_info)
+  File "C:\Python34\lib\site-packages\django\utils\six.py", line 686, in reraise
+    raise value
+  File "C:\Python34\lib\site-packages\django\template\defaulttags.py", line 499, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Python34\lib\site-packages\django\core\urlresolvers.py", line 596, in reverse
+    key)
+django.core.urlresolvers.NoReverseMatch: 'preguntas' is not a registered namespace
+DEBUG:root:{'default': {'NAME': 'C:\\Users\\Olek\\Desktop\\marinehow-master - Copy\\db.sqlite3', 'ENGINE': 'django.db.backends.sqlite3'}}
+WARNING:py.warnings:C:\Python34\lib\importlib\_bootstrap.py:321: RemovedInDjango110Warning: django.core.context_processors is deprecated in favor of django.template.context_processors.
+  return f(*args, **kwds)
+
+DEBUG:root:{'default': {'NAME': 'C:\\Users\\Olek\\Desktop\\marinehow-master - Copy\\db.sqlite3', 'ENGINE': 'django.db.backends.sqlite3'}}
+WARNING:py.warnings:C:\Python34\lib\importlib\_bootstrap.py:321: RemovedInDjango110Warning: django.core.context_processors is deprecated in favor of django.template.context_processors.
+  return f(*args, **kwds)
+
+DEBUG:root:{'default': {'NAME': 'C:\\Users\\Olek\\Desktop\\marinehow-master - Copy\\db.sqlite3', 'ENGINE': 'django.db.backends.sqlite3'}}
+DEBUG:root:{'default': {'NAME': 'C:\\Users\\Olek\\Desktop\\marinehow-master - Copy\\db.sqlite3', 'ENGINE': 'django.db.backends.sqlite3'}}
+WARNING:py.warnings:C:\Python34\lib\importlib\_bootstrap.py:321: RemovedInDjango110Warning: django.core.context_processors is deprecated in favor of django.template.context_processors.
+  return f(*args, **kwds)
+
+DEBUG:root:{'default': {'ENGINE': 'django.db.backends.sqlite3', 'NAME': 'C:\\Users\\Olek\\Desktop\\marinehow-master - Copy\\db.sqlite3'}}
+WARNING:py.warnings:C:\Python34\lib\importlib\_bootstrap.py:321: RemovedInDjango110Warning: django.core.context_processors is deprecated in favor of django.template.context_processors.
+  return f(*args, **kwds)
+
+DEBUG:root:{'default': {'NAME': 'C:\\Users\\Olek\\Desktop\\marinehow-master - Copy\\db.sqlite3', 'ENGINE': 'django.db.backends.sqlite3'}}
+WARNING:py.warnings:C:\Python34\lib\importlib\_bootstrap.py:321: RemovedInDjango110Warning: django.core.context_processors is deprecated in favor of django.template.context_processors.
+  return f(*args, **kwds)
+
+DEBUG:root:{'default': {'NAME': 'C:\\Users\\Olek\\Desktop\\marinehow-master - Copy\\db.sqlite3', 'ENGINE': 'django.db.backends.sqlite3'}}
+WARNING:py.warnings:C:\Python34\lib\importlib\_bootstrap.py:321: RemovedInDjango110Warning: django.core.context_processors is deprecated in favor of django.template.context_processors.
+  return f(*args, **kwds)
+
+DEBUG:root:{'default': {'NAME': 'C:\\Users\\Olek\\Desktop\\marinehow-master - Copy\\db.sqlite3', 'ENGINE': 'django.db.backends.sqlite3'}}
+WARNING:py.warnings:C:\Python34\lib\importlib\_bootstrap.py:321: RemovedInDjango110Warning: django.core.context_processors is deprecated in favor of django.template.context_processors.
+  return f(*args, **kwds)
+
+DEBUG:root:{'default': {'ENGINE': 'django.db.backends.sqlite3', 'NAME': 'C:\\Users\\Olek\\Desktop\\marinehow-master - Copy\\db.sqlite3'}}
+WARNING:py.warnings:C:\Python34\lib\importlib\_bootstrap.py:321: RemovedInDjango110Warning: django.core.context_processors is deprecated in favor of django.template.context_processors.
+  return f(*args, **kwds)
+
+DEBUG:root:{'default': {'NAME': 'C:\\Users\\Olek\\Desktop\\marinehow-master - Copy\\db.sqlite3', 'ENGINE': 'django.db.backends.sqlite3'}}
+DEBUG:root:{'default': {'NAME': 'C:\\Users\\Olek\\Desktop\\marinehow-master - Copy\\db.sqlite3', 'ENGINE': 'django.db.backends.sqlite3'}}
+WARNING:py.warnings:C:\Python34\lib\importlib\_bootstrap.py:321: RemovedInDjango110Warning: django.core.context_processors is deprecated in favor of django.template.context_processors.
+  return f(*args, **kwds)
+
+ERROR:django.request:Internal Server Error: /question/1/
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\django\template\backends\django.py", line 95, in render
+    return self.template.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 206, in render
+    return self._render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "C:\Python34\lib\site-packages\django\template\loader_tags.py", line 173, in render
+    return compiled_parent._render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "C:\Python34\lib\site-packages\django\template\loader_tags.py", line 69, in render
+    result = block.nodelist.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "C:\Python34\lib\site-packages\django\template\library.py", line 234, in render
+    t = context.template.engine.get_template(self.filename)
+  File "C:\Python34\lib\site-packages\django\template\engine.py", line 190, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "C:\Python34\lib\site-packages\django\template\engine.py", line 169, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: preguntas/vote_buttons.html
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\django\core\handlers\base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Python34\lib\site-packages\django\core\handlers\base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Olek\Desktop\marinehow-master - Copy\marinehow\views.py", line 170, in question_detail
+    return render(request, 'marinehow/question.html', context)
+  File "C:\Python34\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "C:\Python34\lib\site-packages\django\template\loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "C:\Python34\lib\site-packages\django\template\backends\django.py", line 97, in render
+    reraise(exc, self.backend)
+  File "C:\Python34\lib\site-packages\django\template\backends\django.py", line 118, in reraise
+    six.reraise(exc.__class__, new, sys.exc_info()[2])
+  File "C:\Python34\lib\site-packages\django\utils\six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Python34\lib\site-packages\django\template\backends\django.py", line 95, in render
+    return self.template.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 206, in render
+    return self._render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "C:\Python34\lib\site-packages\django\template\loader_tags.py", line 173, in render
+    return compiled_parent._render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "C:\Python34\lib\site-packages\django\template\loader_tags.py", line 69, in render
+    result = block.nodelist.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "C:\Python34\lib\site-packages\django\template\library.py", line 234, in render
+    t = context.template.engine.get_template(self.filename)
+  File "C:\Python34\lib\site-packages\django\template\engine.py", line 190, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "C:\Python34\lib\site-packages\django\template\engine.py", line 169, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: preguntas/vote_buttons.html
+ERROR:django.request:Internal Server Error: /question/2/
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\django\template\backends\django.py", line 95, in render
+    return self.template.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 206, in render
+    return self._render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "C:\Python34\lib\site-packages\django\template\loader_tags.py", line 173, in render
+    return compiled_parent._render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "C:\Python34\lib\site-packages\django\template\loader_tags.py", line 69, in render
+    result = block.nodelist.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "C:\Python34\lib\site-packages\django\template\library.py", line 234, in render
+    t = context.template.engine.get_template(self.filename)
+  File "C:\Python34\lib\site-packages\django\template\engine.py", line 190, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "C:\Python34\lib\site-packages\django\template\engine.py", line 169, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: preguntas/vote_buttons.html
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\django\core\handlers\base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Python34\lib\site-packages\django\core\handlers\base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Olek\Desktop\marinehow-master - Copy\marinehow\views.py", line 170, in question_detail
+    return render(request, 'marinehow/question.html', context)
+  File "C:\Python34\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "C:\Python34\lib\site-packages\django\template\loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "C:\Python34\lib\site-packages\django\template\backends\django.py", line 97, in render
+    reraise(exc, self.backend)
+  File "C:\Python34\lib\site-packages\django\template\backends\django.py", line 118, in reraise
+    six.reraise(exc.__class__, new, sys.exc_info()[2])
+  File "C:\Python34\lib\site-packages\django\utils\six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Python34\lib\site-packages\django\template\backends\django.py", line 95, in render
+    return self.template.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 206, in render
+    return self._render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "C:\Python34\lib\site-packages\django\template\loader_tags.py", line 173, in render
+    return compiled_parent._render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "C:\Python34\lib\site-packages\django\template\loader_tags.py", line 69, in render
+    result = block.nodelist.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "C:\Python34\lib\site-packages\django\template\library.py", line 234, in render
+    t = context.template.engine.get_template(self.filename)
+  File "C:\Python34\lib\site-packages\django\template\engine.py", line 190, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "C:\Python34\lib\site-packages\django\template\engine.py", line 169, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: preguntas/vote_buttons.html
+ERROR:django.request:Internal Server Error: /question/2/
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\django\template\backends\django.py", line 95, in render
+    return self.template.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 206, in render
+    return self._render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "C:\Python34\lib\site-packages\django\template\loader_tags.py", line 173, in render
+    return compiled_parent._render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "C:\Python34\lib\site-packages\django\template\loader_tags.py", line 69, in render
+    result = block.nodelist.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "C:\Python34\lib\site-packages\django\template\library.py", line 234, in render
+    t = context.template.engine.get_template(self.filename)
+  File "C:\Python34\lib\site-packages\django\template\engine.py", line 190, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "C:\Python34\lib\site-packages\django\template\engine.py", line 169, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: preguntas/vote_buttons.html
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\django\core\handlers\base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Python34\lib\site-packages\django\core\handlers\base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Olek\Desktop\marinehow-master - Copy\marinehow\views.py", line 170, in question_detail
+    return render(request, 'marinehow/question.html', context)
+  File "C:\Python34\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "C:\Python34\lib\site-packages\django\template\loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "C:\Python34\lib\site-packages\django\template\backends\django.py", line 97, in render
+    reraise(exc, self.backend)
+  File "C:\Python34\lib\site-packages\django\template\backends\django.py", line 118, in reraise
+    six.reraise(exc.__class__, new, sys.exc_info()[2])
+  File "C:\Python34\lib\site-packages\django\utils\six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Python34\lib\site-packages\django\template\backends\django.py", line 95, in render
+    return self.template.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 206, in render
+    return self._render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "C:\Python34\lib\site-packages\django\template\loader_tags.py", line 173, in render
+    return compiled_parent._render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "C:\Python34\lib\site-packages\django\template\loader_tags.py", line 69, in render
+    result = block.nodelist.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "C:\Python34\lib\site-packages\django\template\library.py", line 234, in render
+    t = context.template.engine.get_template(self.filename)
+  File "C:\Python34\lib\site-packages\django\template\engine.py", line 190, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "C:\Python34\lib\site-packages\django\template\engine.py", line 169, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: preguntas/vote_buttons.html
+ERROR:django.request:Internal Server Error: /question/1/
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\django\template\backends\django.py", line 95, in render
+    return self.template.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 206, in render
+    return self._render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "C:\Python34\lib\site-packages\django\template\loader_tags.py", line 173, in render
+    return compiled_parent._render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "C:\Python34\lib\site-packages\django\template\loader_tags.py", line 69, in render
+    result = block.nodelist.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "C:\Python34\lib\site-packages\django\template\library.py", line 234, in render
+    t = context.template.engine.get_template(self.filename)
+  File "C:\Python34\lib\site-packages\django\template\engine.py", line 190, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "C:\Python34\lib\site-packages\django\template\engine.py", line 169, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: preguntas/vote_buttons.html
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\django\core\handlers\base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Python34\lib\site-packages\django\core\handlers\base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Olek\Desktop\marinehow-master - Copy\marinehow\views.py", line 170, in question_detail
+    return render(request, 'marinehow/question.html', context)
+  File "C:\Python34\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "C:\Python34\lib\site-packages\django\template\loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "C:\Python34\lib\site-packages\django\template\backends\django.py", line 97, in render
+    reraise(exc, self.backend)
+  File "C:\Python34\lib\site-packages\django\template\backends\django.py", line 118, in reraise
+    six.reraise(exc.__class__, new, sys.exc_info()[2])
+  File "C:\Python34\lib\site-packages\django\utils\six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Python34\lib\site-packages\django\template\backends\django.py", line 95, in render
+    return self.template.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 206, in render
+    return self._render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "C:\Python34\lib\site-packages\django\template\loader_tags.py", line 173, in render
+    return compiled_parent._render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "C:\Python34\lib\site-packages\django\template\loader_tags.py", line 69, in render
+    result = block.nodelist.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "C:\Python34\lib\site-packages\django\template\library.py", line 234, in render
+    t = context.template.engine.get_template(self.filename)
+  File "C:\Python34\lib\site-packages\django\template\engine.py", line 190, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "C:\Python34\lib\site-packages\django\template\engine.py", line 169, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: preguntas/vote_buttons.html
+ERROR:django.request:Internal Server Error: /question/2/
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\django\template\backends\django.py", line 95, in render
+    return self.template.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 206, in render
+    return self._render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "C:\Python34\lib\site-packages\django\template\loader_tags.py", line 173, in render
+    return compiled_parent._render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "C:\Python34\lib\site-packages\django\template\loader_tags.py", line 69, in render
+    result = block.nodelist.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "C:\Python34\lib\site-packages\django\template\library.py", line 234, in render
+    t = context.template.engine.get_template(self.filename)
+  File "C:\Python34\lib\site-packages\django\template\engine.py", line 190, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "C:\Python34\lib\site-packages\django\template\engine.py", line 169, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: preguntas/vote_buttons.html
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\django\core\handlers\base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Python34\lib\site-packages\django\core\handlers\base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Olek\Desktop\marinehow-master - Copy\marinehow\views.py", line 170, in question_detail
+    return render(request, 'marinehow/question.html', context)
+  File "C:\Python34\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "C:\Python34\lib\site-packages\django\template\loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "C:\Python34\lib\site-packages\django\template\backends\django.py", line 97, in render
+    reraise(exc, self.backend)
+  File "C:\Python34\lib\site-packages\django\template\backends\django.py", line 118, in reraise
+    six.reraise(exc.__class__, new, sys.exc_info()[2])
+  File "C:\Python34\lib\site-packages\django\utils\six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Python34\lib\site-packages\django\template\backends\django.py", line 95, in render
+    return self.template.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 206, in render
+    return self._render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "C:\Python34\lib\site-packages\django\template\loader_tags.py", line 173, in render
+    return compiled_parent._render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "C:\Python34\lib\site-packages\django\template\loader_tags.py", line 69, in render
+    result = block.nodelist.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "C:\Python34\lib\site-packages\django\template\library.py", line 234, in render
+    t = context.template.engine.get_template(self.filename)
+  File "C:\Python34\lib\site-packages\django\template\engine.py", line 190, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "C:\Python34\lib\site-packages\django\template\engine.py", line 169, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: preguntas/vote_buttons.html
+ERROR:django.request:Internal Server Error: /question/2/
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\django\template\backends\django.py", line 95, in render
+    return self.template.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 206, in render
+    return self._render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "C:\Python34\lib\site-packages\django\template\loader_tags.py", line 173, in render
+    return compiled_parent._render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "C:\Python34\lib\site-packages\django\template\loader_tags.py", line 69, in render
+    result = block.nodelist.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "C:\Python34\lib\site-packages\django\template\library.py", line 234, in render
+    t = context.template.engine.get_template(self.filename)
+  File "C:\Python34\lib\site-packages\django\template\engine.py", line 190, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "C:\Python34\lib\site-packages\django\template\engine.py", line 169, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: preguntas/vote_buttons.html
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\django\core\handlers\base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Python34\lib\site-packages\django\core\handlers\base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Olek\Desktop\marinehow-master - Copy\marinehow\views.py", line 170, in question_detail
+    return render(request, 'marinehow/question.html', context)
+  File "C:\Python34\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "C:\Python34\lib\site-packages\django\template\loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "C:\Python34\lib\site-packages\django\template\backends\django.py", line 97, in render
+    reraise(exc, self.backend)
+  File "C:\Python34\lib\site-packages\django\template\backends\django.py", line 118, in reraise
+    six.reraise(exc.__class__, new, sys.exc_info()[2])
+  File "C:\Python34\lib\site-packages\django\utils\six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Python34\lib\site-packages\django\template\backends\django.py", line 95, in render
+    return self.template.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 206, in render
+    return self._render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "C:\Python34\lib\site-packages\django\template\loader_tags.py", line 173, in render
+    return compiled_parent._render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "C:\Python34\lib\site-packages\django\template\loader_tags.py", line 69, in render
+    result = block.nodelist.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "C:\Python34\lib\site-packages\django\template\library.py", line 234, in render
+    t = context.template.engine.get_template(self.filename)
+  File "C:\Python34\lib\site-packages\django\template\engine.py", line 190, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "C:\Python34\lib\site-packages\django\template\engine.py", line 169, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: preguntas/vote_buttons.html
+DEBUG:root:{'default': {'NAME': 'C:\\Users\\Olek\\Desktop\\marinehow-master - Copy\\db.sqlite3', 'ENGINE': 'django.db.backends.sqlite3'}}
+DEBUG:root:{'default': {'NAME': 'C:\\Users\\Olek\\Desktop\\marinehow-master - Copy\\db.sqlite3', 'ENGINE': 'django.db.backends.sqlite3'}}
+DEBUG:root:{'default': {'NAME': 'C:\\Users\\Olek\\Desktop\\marinehow-master - Copy\\db.sqlite3', 'ENGINE': 'django.db.backends.sqlite3'}}
+WARNING:py.warnings:C:\Python34\lib\importlib\_bootstrap.py:321: RemovedInDjango110Warning: django.core.context_processors is deprecated in favor of django.template.context_processors.
+  return f(*args, **kwds)
+
+DEBUG:root:{'default': {'NAME': 'C:\\Users\\Olek\\Desktop\\marinehow-master - Copy\\db.sqlite3', 'ENGINE': 'django.db.backends.sqlite3'}}
+DEBUG:root:{'default': {'NAME': 'C:\\Users\\Olek\\Desktop\\marinehow-master - Copy\\db.sqlite3', 'ENGINE': 'django.db.backends.sqlite3'}}
+WARNING:py.warnings:C:\Python34\lib\importlib\_bootstrap.py:321: RemovedInDjango110Warning: django.core.context_processors is deprecated in favor of django.template.context_processors.
+  return f(*args, **kwds)
+
+ERROR:django.request:Internal Server Error: /question/1/
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\django\template\backends\django.py", line 95, in render
+    return self.template.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 206, in render
+    return self._render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "C:\Python34\lib\site-packages\django\template\loader_tags.py", line 173, in render
+    return compiled_parent._render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "C:\Python34\lib\site-packages\django\template\loader_tags.py", line 69, in render
+    result = block.nodelist.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "C:\Python34\lib\site-packages\django\template\library.py", line 234, in render
+    t = context.template.engine.get_template(self.filename)
+  File "C:\Python34\lib\site-packages\django\template\engine.py", line 190, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "C:\Python34\lib\site-packages\django\template\engine.py", line 169, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: preguntas/vote_buttons.html
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\django\core\handlers\base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Python34\lib\site-packages\django\core\handlers\base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Olek\Desktop\marinehow-master - Copy\marinehow\views.py", line 170, in question_detail
+    return render(request, 'marinehow/question.html', context)
+  File "C:\Python34\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "C:\Python34\lib\site-packages\django\template\loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "C:\Python34\lib\site-packages\django\template\backends\django.py", line 97, in render
+    reraise(exc, self.backend)
+  File "C:\Python34\lib\site-packages\django\template\backends\django.py", line 118, in reraise
+    six.reraise(exc.__class__, new, sys.exc_info()[2])
+  File "C:\Python34\lib\site-packages\django\utils\six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Python34\lib\site-packages\django\template\backends\django.py", line 95, in render
+    return self.template.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 206, in render
+    return self._render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "C:\Python34\lib\site-packages\django\template\loader_tags.py", line 173, in render
+    return compiled_parent._render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "C:\Python34\lib\site-packages\django\template\loader_tags.py", line 69, in render
+    result = block.nodelist.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "C:\Python34\lib\site-packages\django\template\library.py", line 234, in render
+    t = context.template.engine.get_template(self.filename)
+  File "C:\Python34\lib\site-packages\django\template\engine.py", line 190, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "C:\Python34\lib\site-packages\django\template\engine.py", line 169, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: preguntas/vote_buttons.html
+ERROR:django.request:Internal Server Error: /question/2/
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\django\template\backends\django.py", line 95, in render
+    return self.template.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 206, in render
+    return self._render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "C:\Python34\lib\site-packages\django\template\loader_tags.py", line 173, in render
+    return compiled_parent._render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "C:\Python34\lib\site-packages\django\template\loader_tags.py", line 69, in render
+    result = block.nodelist.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "C:\Python34\lib\site-packages\django\template\library.py", line 234, in render
+    t = context.template.engine.get_template(self.filename)
+  File "C:\Python34\lib\site-packages\django\template\engine.py", line 190, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "C:\Python34\lib\site-packages\django\template\engine.py", line 169, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: preguntas/vote_buttons.html
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\django\core\handlers\base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Python34\lib\site-packages\django\core\handlers\base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Olek\Desktop\marinehow-master - Copy\marinehow\views.py", line 170, in question_detail
+    return render(request, 'marinehow/question.html', context)
+  File "C:\Python34\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "C:\Python34\lib\site-packages\django\template\loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "C:\Python34\lib\site-packages\django\template\backends\django.py", line 97, in render
+    reraise(exc, self.backend)
+  File "C:\Python34\lib\site-packages\django\template\backends\django.py", line 118, in reraise
+    six.reraise(exc.__class__, new, sys.exc_info()[2])
+  File "C:\Python34\lib\site-packages\django\utils\six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Python34\lib\site-packages\django\template\backends\django.py", line 95, in render
+    return self.template.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 206, in render
+    return self._render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "C:\Python34\lib\site-packages\django\template\loader_tags.py", line 173, in render
+    return compiled_parent._render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "C:\Python34\lib\site-packages\django\template\loader_tags.py", line 69, in render
+    result = block.nodelist.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "C:\Python34\lib\site-packages\django\template\library.py", line 234, in render
+    t = context.template.engine.get_template(self.filename)
+  File "C:\Python34\lib\site-packages\django\template\engine.py", line 190, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "C:\Python34\lib\site-packages\django\template\engine.py", line 169, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: preguntas/vote_buttons.html
+DEBUG:root:{'default': {'PASSWORD': 'uda4ave3enie', 'ENGINE': 'django.db.backends.postgresql', 'PORT': '5432', 'HOST': '127.0.0.1', 'USER': 'olekruss', 'NAME': 'postgres'}}
+WARNING:py.warnings:C:\Python34\lib\importlib\_bootstrap.py:321: RemovedInDjango110Warning: django.core.context_processors is deprecated in favor of django.template.context_processors.
+  return f(*args, **kwds)
+
+DEBUG:root:{'default': {'HOST': '127.0.0.1', 'USER': 'postgres', 'PASSWORD': 'uda4ave3enie', 'NAME': 'olekruss', 'ENGINE': 'django.db.backends.postgresql', 'PORT': '5432'}}
+WARNING:py.warnings:C:\Python34\lib\importlib\_bootstrap.py:321: RemovedInDjango110Warning: django.core.context_processors is deprecated in favor of django.template.context_processors.
+  return f(*args, **kwds)
+
+DEBUG:root:{'default': {'USER': '', 'CONN_MAX_AGE': 500, 'NAME': 'olekruss', 'PORT': '', 'ENGINE': 'django.db.backends.postgresql_psycopg2', 'HOST': '', 'PASSWORD': ''}}
+WARNING:py.warnings:C:\Python34\lib\importlib\_bootstrap.py:321: RemovedInDjango110Warning: django.core.context_processors is deprecated in favor of django.template.context_processors.
+  return f(*args, **kwds)
+
+DEBUG:root:{'default': {'CONN_MAX_AGE': 500, 'PASSWORD': '', 'USER': '', 'ENGINE': 'django.db.backends.postgresql_psycopg2', 'PORT': '', 'NAME': 'olekruss', 'HOST': ''}}
+WARNING:py.warnings:C:\Python34\lib\importlib\_bootstrap.py:321: RemovedInDjango110Warning: django.core.context_processors is deprecated in favor of django.template.context_processors.
+  return f(*args, **kwds)
+
+DEBUG:root:{'default': {'PORT': '', 'PASSWORD': '', 'CONN_MAX_AGE': 500, 'NAME': 'olekruss', 'USER': '', 'HOST': '', 'ENGINE': 'django.db.backends.postgresql_psycopg2'}}
+WARNING:py.warnings:C:\Python34\lib\importlib\_bootstrap.py:321: RemovedInDjango110Warning: django.core.context_processors is deprecated in favor of django.template.context_processors.
+  return f(*args, **kwds)
+
+DEBUG:root:{'default': {'NAME': 'd3n3h5k7ccaad', 'PORT': '5432', 'HOST': 'ec2-50-17-212-238.compute-1.amazonaws.com', 'USER': 'yeepdxihvcvhge', 'PASSWORD': 'VLzOY7PF5O7L_1KzDicH3fDK-I', 'ENGINE': 'django.db.backends.postgresql'}}
+WARNING:py.warnings:C:\Python34\lib\importlib\_bootstrap.py:321: RemovedInDjango110Warning: django.core.context_processors is deprecated in favor of django.template.context_processors.
+  return f(*args, **kwds)
+
+DEBUG:root:{'default': {'ENGINE': 'django.db.backends.postgresql', 'USER': 'yeepdxihvcvhge', 'HOST': 'ec2-50-17-212-238.compute-1.amazonaws.com', 'NAME': 'd3n3h5k7ccaad', 'PASSWORD': 'VLzOY7PF5O7L_1KzDicH3fDK-I', 'PORT': '5432'}}
+WARNING:py.warnings:C:\Python34\lib\importlib\_bootstrap.py:321: RemovedInDjango110Warning: django.core.context_processors is deprecated in favor of django.template.context_processors.
+  return f(*args, **kwds)
+
+DEBUG:root:{'default': {'ENGINE': 'django.db.backends.postgresql', 'USER': 'yeepdxihvcvhge', 'HOST': 'ec2-50-17-212-238.compute-1.amazonaws.com', 'NAME': 'd3n3h5k7ccaad', 'PORT': '5432', 'PASSWORD': 'VLzOY7PF5O7L_1KzDicH3fDK-I'}}
+WARNING:py.warnings:C:\Python34\lib\importlib\_bootstrap.py:321: RemovedInDjango110Warning: django.core.context_processors is deprecated in favor of django.template.context_processors.
+  return f(*args, **kwds)
+
+DEBUG:root:{'default': {'PASSWORD': 'VLzOY7PF5O7L_1KzDicH3fDK-I', 'USER': 'yeepdxihvcvhge', 'NAME': 'd3n3h5k7ccaad', 'PORT': '5432', 'ENGINE': 'django.db.backends.postgresql', 'HOST': 'ec2-50-17-212-238.compute-1.amazonaws.com'}}
+DEBUG:root:{'default': {'PORT': '5432', 'NAME': 'd3n3h5k7ccaad', 'ENGINE': 'django.db.backends.postgresql', 'PASSWORD': 'VLzOY7PF5O7L_1KzDicH3fDK-I', 'USER': 'yeepdxihvcvhge', 'HOST': 'ec2-50-17-212-238.compute-1.amazonaws.com'}}
+WARNING:py.warnings:C:\Python34\lib\importlib\_bootstrap.py:321: RemovedInDjango110Warning: django.core.context_processors is deprecated in favor of django.template.context_processors.
+  return f(*args, **kwds)
+
+WARNING:django.request:Not Found: /favicon.ico
+DEBUG:root:{'default': {'HOST': 'ec2-50-17-212-238.compute-1.amazonaws.com', 'PASSWORD': 'VLzOY7PF5O7L_1KzDicH3fDK-I', 'USER': 'yeepdxihvcvhge', 'PORT': '5432', 'ENGINE': 'django.db.backends.postgresql', 'NAME': 'd3n3h5k7ccaad'}}
+WARNING:py.warnings:C:\Python34\lib\importlib\_bootstrap.py:321: RemovedInDjango110Warning: django.core.context_processors is deprecated in favor of django.template.context_processors.
+  return f(*args, **kwds)
+
+DEBUG:root:{'default': {'ENGINE': 'django.db.backends.postgresql', 'PORT': '5432', 'HOST': 'ec2-50-17-212-238.compute-1.amazonaws.com', 'USER': 'yeepdxihvcvhge', 'PASSWORD': 'VLzOY7PF5O7L_1KzDicH3fDK-I', 'NAME': 'd3n3h5k7ccaad'}}
+DEBUG:root:{'default': {'ENGINE': 'django.db.backends.postgresql', 'USER': 'yeepdxihvcvhge', 'PORT': '5432', 'PASSWORD': 'VLzOY7PF5O7L_1KzDicH3fDK-I', 'HOST': 'ec2-50-17-212-238.compute-1.amazonaws.com', 'NAME': 'd3n3h5k7ccaad'}}
+WARNING:py.warnings:C:\Python34\lib\importlib\_bootstrap.py:321: RemovedInDjango110Warning: django.core.context_processors is deprecated in favor of django.template.context_processors.
+  return f(*args, **kwds)
+
+DEBUG:root:{'default': {'HOST': 'ec2-50-17-212-238.compute-1.amazonaws.com', 'PASSWORD': 'VLzOY7PF5O7L_1KzDicH3fDK-I', 'PORT': '5432', 'ENGINE': 'django.db.backends.postgresql', 'USER': 'yeepdxihvcvhge', 'NAME': 'd3n3h5k7ccaad'}}
+DEBUG:root:{'default': {'PASSWORD': 'VLzOY7PF5O7L_1KzDicH3fDK-I', 'ENGINE': 'django.db.backends.postgresql', 'USER': 'yeepdxihvcvhge', 'HOST': 'ec2-50-17-212-238.compute-1.amazonaws.com', 'NAME': 'd3n3h5k7ccaad', 'PORT': '5432'}}
+WARNING:py.warnings:C:\Python34\lib\importlib\_bootstrap.py:321: RemovedInDjango110Warning: django.core.context_processors is deprecated in favor of django.template.context_processors.
+  return f(*args, **kwds)
+
+ERROR:django.request:Internal Server Error: /question/1/
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\django\core\handlers\base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Python34\lib\site-packages\django\core\handlers\base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Olek\Desktop\marinehow\marinehow\views.py", line 164, in question_detail
+    i_have_answered = request.user.is_authenticated() and answers.filter(owner_id=request.user.usuario.id).exists()
+  File "C:\Python34\lib\site-packages\django\utils\functional.py", line 205, in inner
+    return func(self._wrapped, *args)
+  File "C:\Python34\lib\site-packages\django\db\models\fields\related_descriptors.py", line 355, in __get__
+    self.related.get_accessor_name()
+django.db.models.fields.related_descriptors.RelatedObjectDoesNotExist: User has no usuario.
+ERROR:django.request:Internal Server Error: /profile/
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\django\core\urlresolvers.py", line 586, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'marinehowscript.marinehow'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\django\template\defaulttags.py", line 507, in render
+    current_app=current_app)
+  File "C:\Python34\lib\site-packages\django\core\urlresolvers.py", line 596, in reverse
+    key)
+django.core.urlresolvers.NoReverseMatch: 'marinehowscript.marinehow' is not a registered namespace
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\django\core\handlers\base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Python34\lib\site-packages\django\core\handlers\base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Olek\Desktop\marinehow\marinehow\views.py", line 25, in profile
+    return render(request, 'marinehow/please_login.html')
+  File "C:\Python34\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "C:\Python34\lib\site-packages\django\template\loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "C:\Python34\lib\site-packages\django\template\backends\django.py", line 95, in render
+    return self.template.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 206, in render
+    return self._render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "C:\Python34\lib\site-packages\django\template\loader_tags.py", line 173, in render
+    return compiled_parent._render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "C:\Python34\lib\site-packages\django\template\loader_tags.py", line 69, in render
+    result = block.nodelist.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "C:\Python34\lib\site-packages\django\template\defaulttags.py", line 513, in render
+    six.reraise(*exc_info)
+  File "C:\Python34\lib\site-packages\django\utils\six.py", line 686, in reraise
+    raise value
+  File "C:\Python34\lib\site-packages\django\template\defaulttags.py", line 499, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Python34\lib\site-packages\django\core\urlresolvers.py", line 600, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "C:\Python34\lib\site-packages\django\core\urlresolvers.py", line 508, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns))
+django.core.urlresolvers.NoReverseMatch: Reverse for 'register' with arguments '()' and keyword arguments '{}' not found. 0 pattern(s) tried: []
+DEBUG:root:{'default': {'ENGINE': 'django.db.backends.postgresql', 'HOST': 'ec2-50-17-212-238.compute-1.amazonaws.com', 'USER': 'yeepdxihvcvhge', 'NAME': 'd3n3h5k7ccaad', 'PASSWORD': 'VLzOY7PF5O7L_1KzDicH3fDK-I', 'PORT': '5432'}}
+DEBUG:root:{'default': {'PASSWORD': 'VLzOY7PF5O7L_1KzDicH3fDK-I', 'ENGINE': 'django.db.backends.postgresql', 'NAME': 'd3n3h5k7ccaad', 'HOST': 'ec2-50-17-212-238.compute-1.amazonaws.com', 'USER': 'yeepdxihvcvhge', 'PORT': '5432'}}
+WARNING:py.warnings:C:\Python34\lib\importlib\_bootstrap.py:321: RemovedInDjango110Warning: django.core.context_processors is deprecated in favor of django.template.context_processors.
+  return f(*args, **kwds)
+
+WARNING:django.request:Not Found: /favicon.ico
+ERROR:django.request:Internal Server Error: /question/4/
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\django\core\handlers\base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Python34\lib\site-packages\django\core\handlers\base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Olek\Desktop\marinehow\marinehow\views.py", line 164, in question_detail
+    i_have_answered = request.user.is_authenticated() and answers.filter(owner_id=request.user.usuario.id).exists()
+  File "C:\Python34\lib\site-packages\django\utils\functional.py", line 205, in inner
+    return func(self._wrapped, *args)
+  File "C:\Python34\lib\site-packages\django\db\models\fields\related_descriptors.py", line 355, in __get__
+    self.related.get_accessor_name()
+django.db.models.fields.related_descriptors.RelatedObjectDoesNotExist: User has no usuario.
+ERROR:django.request:Internal Server Error: /question/3/
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\django\core\handlers\base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Python34\lib\site-packages\django\core\handlers\base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Olek\Desktop\marinehow\marinehow\views.py", line 164, in question_detail
+    i_have_answered = request.user.is_authenticated() and answers.filter(owner_id=request.user.usuario.id).exists()
+  File "C:\Python34\lib\site-packages\django\utils\functional.py", line 205, in inner
+    return func(self._wrapped, *args)
+  File "C:\Python34\lib\site-packages\django\db\models\fields\related_descriptors.py", line 355, in __get__
+    self.related.get_accessor_name()
+django.db.models.fields.related_descriptors.RelatedObjectDoesNotExist: User has no usuario.
+DEBUG:root:{'default': {'PASSWORD': 'VLzOY7PF5O7L_1KzDicH3fDK-I', 'USER': 'yeepdxihvcvhge', 'ENGINE': 'django.db.backends.postgresql', 'HOST': 'ec2-50-17-212-238.compute-1.amazonaws.com', 'PORT': '5432', 'NAME': 'd3n3h5k7ccaad'}}
+DEBUG:root:{'default': {'NAME': 'd3n3h5k7ccaad', 'ENGINE': 'django.db.backends.postgresql', 'PORT': '5432', 'USER': 'yeepdxihvcvhge', 'HOST': 'ec2-50-17-212-238.compute-1.amazonaws.com', 'PASSWORD': 'VLzOY7PF5O7L_1KzDicH3fDK-I'}}
+WARNING:py.warnings:C:\Python34\lib\importlib\_bootstrap.py:321: RemovedInDjango110Warning: django.core.context_processors is deprecated in favor of django.template.context_processors.
+  return f(*args, **kwds)
+
+WARNING:django.request:Not Found: /favicon.ico
+ERROR:django.request:Internal Server Error: /profile/
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\django\core\urlresolvers.py", line 586, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'marinehowscript.marinehow'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\django\template\defaulttags.py", line 507, in render
+    current_app=current_app)
+  File "C:\Python34\lib\site-packages\django\core\urlresolvers.py", line 596, in reverse
+    key)
+django.core.urlresolvers.NoReverseMatch: 'marinehowscript.marinehow' is not a registered namespace
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\django\core\handlers\base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Python34\lib\site-packages\django\core\handlers\base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Olek\Desktop\marinehow\marinehow\views.py", line 25, in profile
+    return render(request, 'marinehow/please_login.html')
+  File "C:\Python34\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "C:\Python34\lib\site-packages\django\template\loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "C:\Python34\lib\site-packages\django\template\backends\django.py", line 95, in render
+    return self.template.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 206, in render
+    return self._render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "C:\Python34\lib\site-packages\django\template\loader_tags.py", line 173, in render
+    return compiled_parent._render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "C:\Python34\lib\site-packages\django\template\loader_tags.py", line 69, in render
+    result = block.nodelist.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "C:\Python34\lib\site-packages\django\template\defaulttags.py", line 513, in render
+    six.reraise(*exc_info)
+  File "C:\Python34\lib\site-packages\django\utils\six.py", line 686, in reraise
+    raise value
+  File "C:\Python34\lib\site-packages\django\template\defaulttags.py", line 499, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Python34\lib\site-packages\django\core\urlresolvers.py", line 600, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "C:\Python34\lib\site-packages\django\core\urlresolvers.py", line 508, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns))
+django.core.urlresolvers.NoReverseMatch: Reverse for 'register' with arguments '()' and keyword arguments '{}' not found. 0 pattern(s) tried: []
+ERROR:django.request:Internal Server Error: /question/4/
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\django\core\handlers\base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Python34\lib\site-packages\django\core\handlers\base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Olek\Desktop\marinehow\marinehow\views.py", line 164, in question_detail
+    i_have_answered = request.user.is_authenticated() and answers.filter(owner_id=request.user.usuario.id).exists()
+  File "C:\Python34\lib\site-packages\django\utils\functional.py", line 205, in inner
+    return func(self._wrapped, *args)
+  File "C:\Python34\lib\site-packages\django\db\models\fields\related_descriptors.py", line 355, in __get__
+    self.related.get_accessor_name()
+django.db.models.fields.related_descriptors.RelatedObjectDoesNotExist: User has no usuario.
+DEBUG:root:{'default': {'NAME': 'd3n3h5k7ccaad', 'PORT': '5432', 'USER': 'yeepdxihvcvhge', 'PASSWORD': 'VLzOY7PF5O7L_1KzDicH3fDK-I', 'HOST': 'ec2-50-17-212-238.compute-1.amazonaws.com', 'ENGINE': 'django.db.backends.postgresql'}}
+WARNING:py.warnings:C:\Python34\lib\importlib\_bootstrap.py:321: RemovedInDjango110Warning: django.core.context_processors is deprecated in favor of django.template.context_processors.
+  return f(*args, **kwds)
+
+DEBUG:root:{'default': {'NAME': 'd3n3h5k7ccaad', 'HOST': 'ec2-50-17-212-238.compute-1.amazonaws.com', 'USER': 'yeepdxihvcvhge', 'PASSWORD': 'VLzOY7PF5O7L_1KzDicH3fDK-I', 'PORT': '5432', 'ENGINE': 'django.db.backends.postgresql'}}
+DEBUG:root:{'default': {'USER': 'yeepdxihvcvhge', 'ENGINE': 'django.db.backends.postgresql', 'HOST': 'ec2-50-17-212-238.compute-1.amazonaws.com', 'PASSWORD': 'VLzOY7PF5O7L_1KzDicH3fDK-I', 'NAME': 'd3n3h5k7ccaad', 'PORT': '5432'}}
+WARNING:py.warnings:C:\Python34\lib\importlib\_bootstrap.py:321: RemovedInDjango110Warning: django.core.context_processors is deprecated in favor of django.template.context_processors.
+  return f(*args, **kwds)
+
+ERROR:django.request:Internal Server Error: /profile/
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\django\core\urlresolvers.py", line 586, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'marinehowscript.marinehow'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\django\template\defaulttags.py", line 507, in render
+    current_app=current_app)
+  File "C:\Python34\lib\site-packages\django\core\urlresolvers.py", line 596, in reverse
+    key)
+django.core.urlresolvers.NoReverseMatch: 'marinehowscript.marinehow' is not a registered namespace
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\django\core\handlers\base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Python34\lib\site-packages\django\core\handlers\base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Olek\Desktop\marinehow - Copy\marinehow\views.py", line 25, in profile
+    return render(request, 'marinehow/please_login.html')
+  File "C:\Python34\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "C:\Python34\lib\site-packages\django\template\loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "C:\Python34\lib\site-packages\django\template\backends\django.py", line 95, in render
+    return self.template.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 206, in render
+    return self._render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "C:\Python34\lib\site-packages\django\template\loader_tags.py", line 173, in render
+    return compiled_parent._render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "C:\Python34\lib\site-packages\django\template\loader_tags.py", line 69, in render
+    result = block.nodelist.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "C:\Python34\lib\site-packages\django\template\defaulttags.py", line 513, in render
+    six.reraise(*exc_info)
+  File "C:\Python34\lib\site-packages\django\utils\six.py", line 686, in reraise
+    raise value
+  File "C:\Python34\lib\site-packages\django\template\defaulttags.py", line 499, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Python34\lib\site-packages\django\core\urlresolvers.py", line 600, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "C:\Python34\lib\site-packages\django\core\urlresolvers.py", line 508, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns))
+django.core.urlresolvers.NoReverseMatch: Reverse for 'register' with arguments '()' and keyword arguments '{}' not found. 0 pattern(s) tried: []
+ERROR:django.request:Internal Server Error: /question/4/
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\django\core\handlers\base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Python34\lib\site-packages\django\core\handlers\base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Olek\Desktop\marinehow - Copy\marinehow\views.py", line 164, in question_detail
+    i_have_answered = request.user.is_authenticated() and answers.filter(owner_id=request.user.usuario.id).exists()
+  File "C:\Python34\lib\site-packages\django\utils\functional.py", line 205, in inner
+    return func(self._wrapped, *args)
+  File "C:\Python34\lib\site-packages\django\db\models\fields\related_descriptors.py", line 355, in __get__
+    self.related.get_accessor_name()
+django.db.models.fields.related_descriptors.RelatedObjectDoesNotExist: User has no usuario.
+ERROR:django.request:Internal Server Error: /question/3/
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\django\core\handlers\base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Python34\lib\site-packages\django\core\handlers\base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Olek\Desktop\marinehow - Copy\marinehow\views.py", line 164, in question_detail
+    i_have_answered = request.user.is_authenticated() and answers.filter(owner_id=request.user.usuario.id).exists()
+  File "C:\Python34\lib\site-packages\django\utils\functional.py", line 205, in inner
+    return func(self._wrapped, *args)
+  File "C:\Python34\lib\site-packages\django\db\models\fields\related_descriptors.py", line 355, in __get__
+    self.related.get_accessor_name()
+django.db.models.fields.related_descriptors.RelatedObjectDoesNotExist: User has no usuario.
+ERROR:django.request:Internal Server Error: /vote/
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\django\core\handlers\base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Python34\lib\site-packages\django\core\handlers\base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Olek\Desktop\marinehow - Copy\marinehow\views.py", line 225, in vote
+    usario_add = Usuario.objects.get(id=request.user.usuario.id)
+  File "C:\Python34\lib\site-packages\django\utils\functional.py", line 205, in inner
+    return func(self._wrapped, *args)
+AttributeError: 'AnonymousUser' object has no attribute 'usuario'
