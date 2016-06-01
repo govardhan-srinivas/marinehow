@@ -3,7 +3,7 @@ from marinehow.models import Usuario
 register = template.Library()
 
 
-@register.inclusion_tag('preguntas/vote_buttons.html')
+@register.inclusion_tag('marinehow/vote_buttons.html')
 def vote_buttons(votable, request):
     if request.user.is_authenticated():
         return {'votable_id': votable.id,
