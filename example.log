@@ -1832,3 +1832,8 @@ WARNING:py.warnings:C:\Python34\lib\importlib\_bootstrap.py:321: RemovedInDjango
   return f(*args, **kwds)
 
 WARNING:django.request:Not Found: /favicon.ico
+DEBUG:root:{'default': {'NAME': 'da5jioe3f9c8b1', 'PORT': '5432', 'HOST': 'ec2-50-17-253-74.compute-1.amazonaws.com', 'ENGINE': 'django.db.backends.postgresql', 'PASSWORD': 'Nd-lC2CK21tsJ6O_77GW9C2qJg', 'USER': 'xoehsgqkkprkxy'}}
+DEBUG:root:{'default': {'USER': 'xoehsgqkkprkxy', 'PORT': '5432', 'PASSWORD': 'Nd-lC2CK21tsJ6O_77GW9C2qJg', 'NAME': 'da5jioe3f9c8b1', 'HOST': 'ec2-50-17-253-74.compute-1.amazonaws.com', 'ENGINE': 'django.db.backends.postgresql'}}
+WARNING:py.warnings:C:\Python34\lib\importlib\_bootstrap.py:321: RemovedInDjango110Warning: django.core.context_processors is deprecated in favor of django.template.context_processors.
+  return f(*args, **kwds)
+
