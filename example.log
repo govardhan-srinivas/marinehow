@@ -1837,3 +1837,8 @@ DEBUG:root:{'default': {'USER': 'xoehsgqkkprkxy', 'PORT': '5432', 'PASSWORD': 'N
 WARNING:py.warnings:C:\Python34\lib\importlib\_bootstrap.py:321: RemovedInDjango110Warning: django.core.context_processors is deprecated in favor of django.template.context_processors.
   return f(*args, **kwds)
 
+DEBUG:root:{'default': {'PASSWORD': 'Nd-lC2CK21tsJ6O_77GW9C2qJg', 'USER': 'xoehsgqkkprkxy', 'PORT': '5432', 'NAME': 'da5jioe3f9c8b1', 'HOST': 'ec2-50-17-253-74.compute-1.amazonaws.com', 'ENGINE': 'django.db.backends.postgresql'}}
+DEBUG:root:{'default': {'NAME': 'da5jioe3f9c8b1', 'PASSWORD': 'Nd-lC2CK21tsJ6O_77GW9C2qJg', 'ENGINE': 'django.db.backends.postgresql', 'USER': 'xoehsgqkkprkxy', 'HOST': 'ec2-50-17-253-74.compute-1.amazonaws.com', 'PORT': '5432'}}
+WARNING:py.warnings:C:\Python34\lib\importlib\_bootstrap.py:321: RemovedInDjango110Warning: django.core.context_processors is deprecated in favor of django.template.context_processors.
+  return f(*args, **kwds)
+
