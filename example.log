@@ -1842,3 +1842,15 @@ DEBUG:root:{'default': {'NAME': 'da5jioe3f9c8b1', 'PASSWORD': 'Nd-lC2CK21tsJ6O_7
 WARNING:py.warnings:C:\Python34\lib\importlib\_bootstrap.py:321: RemovedInDjango110Warning: django.core.context_processors is deprecated in favor of django.template.context_processors.
   return f(*args, **kwds)
 
+DEBUG:root:{'default': {'PORT': '5432', 'PASSWORD': 'Nd-lC2CK21tsJ6O_77GW9C2qJg', 'USER': 'xoehsgqkkprkxy', 'NAME': 'da5jioe3f9c8b1', 'HOST': 'ec2-50-17-253-74.compute-1.amazonaws.com', 'ENGINE': 'django.db.backends.postgresql'}}
+DEBUG:root:{'default': {'ENGINE': 'django.db.backends.postgresql', 'PORT': '5432', 'USER': 'xoehsgqkkprkxy', 'NAME': 'da5jioe3f9c8b1', 'HOST': 'ec2-50-17-253-74.compute-1.amazonaws.com', 'PASSWORD': 'Nd-lC2CK21tsJ6O_77GW9C2qJg'}}
+WARNING:py.warnings:C:\Python34\lib\importlib\_bootstrap.py:321: RemovedInDjango110Warning: django.core.context_processors is deprecated in favor of django.template.context_processors.
+  return f(*args, **kwds)
+
+DEBUG:root:{'default': {'PORT': '5432', 'NAME': 'da5jioe3f9c8b1', 'ENGINE': 'django.db.backends.postgresql', 'HOST': 'ec2-50-17-253-74.compute-1.amazonaws.com', 'PASSWORD': 'Nd-lC2CK21tsJ6O_77GW9C2qJg', 'USER': 'xoehsgqkkprkxy'}}
+DEBUG:root:{'default': {'ENGINE': 'django.db.backends.postgresql', 'HOST': 'ec2-50-17-253-74.compute-1.amazonaws.com', 'USER': 'xoehsgqkkprkxy', 'PORT': '5432', 'PASSWORD': 'Nd-lC2CK21tsJ6O_77GW9C2qJg', 'NAME': 'da5jioe3f9c8b1'}}
+DEBUG:root:{'default': {'HOST': 'ec2-50-17-253-74.compute-1.amazonaws.com', 'NAME': 'da5jioe3f9c8b1', 'ENGINE': 'django.db.backends.postgresql', 'PORT': '5432', 'USER': 'xoehsgqkkprkxy', 'PASSWORD': 'Nd-lC2CK21tsJ6O_77GW9C2qJg'}}
+DEBUG:root:{'default': {'USER': 'xoehsgqkkprkxy', 'HOST': 'ec2-50-17-253-74.compute-1.amazonaws.com', 'PASSWORD': 'Nd-lC2CK21tsJ6O_77GW9C2qJg', 'PORT': '5432', 'ENGINE': 'django.db.backends.postgresql', 'NAME': 'da5jioe3f9c8b1'}}
+WARNING:py.warnings:C:\Python34\lib\importlib\_bootstrap.py:321: RemovedInDjango110Warning: django.core.context_processors is deprecated in favor of django.template.context_processors.
+  return f(*args, **kwds)
+
