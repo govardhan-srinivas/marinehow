@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
+	<link rel="apple-touch-icon" sizes="76x76" href="/static/marinehow/apple-icon.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/static/marinehow/favicon.png">
 
     <title>{% block title %} Marine How{% endblock%}</title>
 	<meta name="description" content="Share your knowledge and find right answer about ship">
@@ -31,7 +33,7 @@
         &#8801;
       </button>
       <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
-          <h1 class="navbar-brand"><a href="{% url 'marinehow:questions' %}"><img src='/static/marinehow/howlogo.jpg' class='img-responsive' /></a></h1>
+          <h1 class="navbar-brand"><a href="{% url 'marinehow:questions' %}"><img src='/static/marinehow/howlogo.png' class='img-responsive' /></a></h1>
           <form class="form-inline navbar-form pull-xs-right" id="searchBar" action="{%url 'marinehow:search'%}" method="get">
             <input class="form-control" type="text" name="q" value="Search Questions">
             <button class="btn btn-success-outline" type="submit">Search</button>
