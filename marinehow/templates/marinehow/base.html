@@ -31,7 +31,7 @@
         &#8801;
       </button>
       <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
-          <h1 class="navbar-brand"><a href="{% url 'marinehow:questions' %}">Marine How</a></h1>
+          <h1 class="navbar-brand"><a href="{% url 'marinehow:questions' %}"><img src='/static/marinehow/howlogo.jpg' class='img-responsive' /></a></h1>
           <form class="form-inline navbar-form pull-xs-right" id="searchBar" action="{%url 'marinehow:search'%}" method="get">
             <input class="form-control" type="text" name="q" value="Search Questions">
             <button class="btn btn-success-outline" type="submit">Search</button>
