@@ -258,3 +258,10 @@ def register_user(request):
 
 def register_success(request):
     return render_to_response('marinehow/register_success.html')
+
+def about_us(request):
+    return render(request, 'marinehow/about_us.html',{})
+
+def contact_us(request):
+    return render(request, 'marinehow/contact_us.html',{})		
+		

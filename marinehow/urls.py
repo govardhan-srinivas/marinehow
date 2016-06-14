@@ -20,5 +20,7 @@ urlpatterns = [
     url(r'^register/$', views.register_user, name='register_user'),
     url(r'^register_success/$', views.register_success, name='register_success'),
     url(r'^logout/$', views.logout_user, name='logout_user'),
+	url(r'^about_us/$', views.about_us, name='about_us'),
+	url(r'^contact_us/$', views.contact_us, name='contact_us'),
     #url(r'^logout/question_list$', views.QuestionList.as_view(), name='questions'),
 ]

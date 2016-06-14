@@ -43,23 +43,18 @@
     <div id="page">
       <div class="container">
         <div class="row">
-          <div id='sidebar' class="col-md-2">
-            {% block sidebar %}
-            <ul style="list-style-type:none">
-                {% if user.is_authenticated %}
-                  <li><a href="{% url 'marinehow:my_profile' %}">Profile</a></li>
-                  <li><a href="{% url 'marinehow:new_question' %}">New Question</a></li>
-                  <li><a href="{% url 'marinehow:logout_user' %}">Logout</a></li>
-                {% else %}
-                  <li><a href="{% url 'marinehow:login' %}">Login</a></li>
-                  <li><a href="{% url 'marinehow:register_user' %}">Register</a></li>
-				  <p class="text-muted">Login to ask question</p>
-                {% endif %}
-            </ul>
-            {% endblock %}
-          </div>
-          <div id='content' class="col-md-8">
-            {% block content %}{% endblock %}
+          <div id='content' class="col-md-12">
+            <address>
+              <strong>MarineHow, Inc.</strong><br>
+               Rävala pst 7,Tallinn<br>
+               Estonia, 10145<br>
+               <abbr title="Phone">P:</abbr> +372 5490 3020
+             </address>
+
+             <address>
+               <strong>Full Name</strong><br>
+               <a href="mailto:#">support@marine.how</a>
+             </address>
           </div>
         </div>
       </div>

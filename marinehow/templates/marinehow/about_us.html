@@ -43,23 +43,8 @@
     <div id="page">
       <div class="container">
         <div class="row">
-          <div id='sidebar' class="col-md-2">
-            {% block sidebar %}
-            <ul style="list-style-type:none">
-                {% if user.is_authenticated %}
-                  <li><a href="{% url 'marinehow:my_profile' %}">Profile</a></li>
-                  <li><a href="{% url 'marinehow:new_question' %}">New Question</a></li>
-                  <li><a href="{% url 'marinehow:logout_user' %}">Logout</a></li>
-                {% else %}
-                  <li><a href="{% url 'marinehow:login' %}">Login</a></li>
-                  <li><a href="{% url 'marinehow:register_user' %}">Register</a></li>
-				  <p class="text-muted">Login to ask question</p>
-                {% endif %}
-            </ul>
-            {% endblock %}
-          </div>
-          <div id='content' class="col-md-8">
-            {% block content %}{% endblock %}
+          <div id='content' class="col-md-12">
+		  
           </div>
         </div>
       </div>
