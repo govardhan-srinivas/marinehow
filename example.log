@@ -1890,3 +1890,89 @@ WARNING:py.warnings:C:\Python34\lib\importlib\_bootstrap.py:321: RemovedInDjango
   return f(*args, **kwds)
 
 WARNING:django.request:Not Found: /favicon.ico
+DEBUG:root:{'default': {'ENGINE': 'django.db.backends.postgresql', 'PORT': '5432', 'USER': 'xoehsgqkkprkxy', 'NAME': 'da5jioe3f9c8b1', 'PASSWORD': 'Nd-lC2CK21tsJ6O_77GW9C2qJg', 'HOST': 'ec2-50-17-253-74.compute-1.amazonaws.com'}}
+DEBUG:root:{'default': {'USER': 'xoehsgqkkprkxy', 'PORT': '5432', 'PASSWORD': 'Nd-lC2CK21tsJ6O_77GW9C2qJg', 'HOST': 'ec2-50-17-253-74.compute-1.amazonaws.com', 'ENGINE': 'django.db.backends.postgresql', 'NAME': 'da5jioe3f9c8b1'}}
+WARNING:py.warnings:C:\Python34\lib\importlib\_bootstrap.py:321: RemovedInDjango110Warning: django.core.context_processors is deprecated in favor of django.template.context_processors.
+  return f(*args, **kwds)
+
+WARNING:django.request:Not Found: /img/default.png
+WARNING:django.request:Not Found: /img/default.png
+WARNING:django.request:Not Found: /img/default.png
+WARNING:django.request:Not Found: /img/default.png
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\django\db\backends\base\base.py", line 199, in ensure_connection
+    self.connect()
+  File "C:\Python34\lib\site-packages\django\db\backends\base\base.py", line 171, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "C:\Python34\lib\site-packages\django\db\backends\postgresql\base.py", line 175, in get_new_connection
+    connection = Database.connect(**conn_params)
+  File "C:\Python34\lib\site-packages\psycopg2\__init__.py", line 164, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, async=async)
+psycopg2.OperationalError: could not connect to server: Connection timed out (0x0000274C/10060)
+	Is the server running on host "ec2-50-17-253-74.compute-1.amazonaws.com" (50.17.253.74) and accepting
+	TCP/IP connections on port 5432?
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\django\core\handlers\base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Python34\lib\site-packages\django\core\handlers\base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python34\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python34\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Python34\lib\site-packages\django\views\generic\list.py", line 174, in get
+    context = self.get_context_data()
+  File "C:\Python34\lib\site-packages\django\views\generic\list.py", line 134, in get_context_data
+    paginator, page, queryset, is_paginated = self.paginate_queryset(queryset, page_size)
+  File "C:\Python34\lib\site-packages\django\views\generic\list.py", line 78, in paginate_queryset
+    page = paginator.page(page_number)
+  File "C:\Python34\lib\site-packages\django\core\paginator.py", line 50, in page
+    number = self.validate_number(number)
+  File "C:\Python34\lib\site-packages\django\core\paginator.py", line 39, in validate_number
+    if number > self.num_pages:
+  File "C:\Python34\lib\site-packages\django\core\paginator.py", line 86, in _get_num_pages
+    if self.count == 0 and not self.allow_empty_first_page:
+  File "C:\Python34\lib\site-packages\django\core\paginator.py", line 72, in _get_count
+    self._count = self.object_list.count()
+  File "C:\Python34\lib\site-packages\django\db\models\query.py", line 371, in count
+    return self.query.get_count(using=self.db)
+  File "C:\Python34\lib\site-packages\django\db\models\sql\query.py", line 483, in get_count
+    number = obj.get_aggregation(using, ['__count'])['__count']
+  File "C:\Python34\lib\site-packages\django\db\models\sql\query.py", line 464, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "C:\Python34\lib\site-packages\django\db\models\sql\compiler.py", line 846, in execute_sql
+    cursor = self.connection.cursor()
+  File "C:\Python34\lib\site-packages\django\db\backends\base\base.py", line 231, in cursor
+    cursor = self.make_debug_cursor(self._cursor())
+  File "C:\Python34\lib\site-packages\django\db\backends\base\base.py", line 204, in _cursor
+    self.ensure_connection()
+  File "C:\Python34\lib\site-packages\django\db\backends\base\base.py", line 199, in ensure_connection
+    self.connect()
+  File "C:\Python34\lib\site-packages\django\db\utils.py", line 95, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "C:\Python34\lib\site-packages\django\utils\six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Python34\lib\site-packages\django\db\backends\base\base.py", line 199, in ensure_connection
+    self.connect()
+  File "C:\Python34\lib\site-packages\django\db\backends\base\base.py", line 171, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "C:\Python34\lib\site-packages\django\db\backends\postgresql\base.py", line 175, in get_new_connection
+    connection = Database.connect(**conn_params)
+  File "C:\Python34\lib\site-packages\psycopg2\__init__.py", line 164, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, async=async)
+django.db.utils.OperationalError: could not connect to server: Connection timed out (0x0000274C/10060)
+	Is the server running on host "ec2-50-17-253-74.compute-1.amazonaws.com" (50.17.253.74) and accepting
+	TCP/IP connections on port 5432?
+
+WARNING:django.request:Not Found: /favicon.ico
+DEBUG:root:{'default': {'PORT': '5432', 'PASSWORD': 'Nd-lC2CK21tsJ6O_77GW9C2qJg', 'NAME': 'da5jioe3f9c8b1', 'HOST': 'ec2-50-17-253-74.compute-1.amazonaws.com', 'ENGINE': 'django.db.backends.postgresql', 'USER': 'xoehsgqkkprkxy'}}
+DEBUG:root:{'default': {'PASSWORD': 'Nd-lC2CK21tsJ6O_77GW9C2qJg', 'HOST': 'ec2-50-17-253-74.compute-1.amazonaws.com', 'PORT': '5432', 'NAME': 'da5jioe3f9c8b1', 'ENGINE': 'django.db.backends.postgresql', 'USER': 'xoehsgqkkprkxy'}}
+WARNING:py.warnings:C:\Python34\lib\importlib\_bootstrap.py:321: RemovedInDjango110Warning: django.core.context_processors is deprecated in favor of django.template.context_processors.
+  return f(*args, **kwds)
+
+WARNING:django.request:Not Found: /favicon.ico
