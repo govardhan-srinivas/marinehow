@@ -52,7 +52,9 @@ body {
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
-  height: 15vh;
+  display: flex;
+  flex-direction: column;
+  min-height: 15vh;
   background-color: #ECF0F1;
   left: 0;
   right: 0;
