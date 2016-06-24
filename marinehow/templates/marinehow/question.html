@@ -33,7 +33,7 @@
       </p>
     {% endfor %}
   {% endif %}
-  {% if not user.is_authenticated%}
+  {% if user.is_authenticated%}
     <p>
       {% with question_id=question.id %}
         Add a <a href="{% url 'marinehow:new_comment' "Question" question_id %}">New Comment</a>
@@ -71,7 +71,7 @@
           </p>
         {% endfor %}
       {% endif %}
-      {% if not user.is_authenticated %}
+      {% if user.is_authenticated %}
         <p>
           {% with answer_id=answer.id %}
             Add a <a href="{% url 'marinehow:new_comment' "Answer" answer_id %}">New Comment</a>
@@ -81,7 +81,7 @@
       <hr>
     {% endfor %}
   {% endif %}
-  {% if not user.is_authenticated and not i_have_answered%}
+  {% if user.is_authenticated and not i_have_answered%}
     <form id="AnswerForm" method="post" action="">
       {% csrf_token %}
       {% for hidden in form.hidden_fields %}
@@ -97,8 +97,8 @@
       <input type="submit" name="submit" value="Add Answer" />
     </form>
   {% endif %}
-  <!-- {% if request.user.is_authenticated %}
+  {% if request.user.is_authenticated %}
   {% else %}
         <p>You must login to answer or comment </p>
-        {% endif %} -->
+        {% endif %}
 {% endblock %}

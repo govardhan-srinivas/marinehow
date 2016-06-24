@@ -1991,3 +1991,72 @@ DEBUG:root:{'default': {'PASSWORD': 'Nd-lC2CK21tsJ6O_77GW9C2qJg', 'NAME': 'da5ji
 WARNING:py.warnings:C:\Python34\lib\importlib\_bootstrap.py:321: RemovedInDjango110Warning: django.core.context_processors is deprecated in favor of django.template.context_processors.
   return f(*args, **kwds)
 
+DEBUG:root:{'default': {'ENGINE': 'django.db.backends.postgresql', 'PASSWORD': 'Nd-lC2CK21tsJ6O_77GW9C2qJg', 'NAME': 'da5jioe3f9c8b1', 'HOST': 'ec2-50-17-253-74.compute-1.amazonaws.com', 'PORT': '5432', 'USER': 'xoehsgqkkprkxy'}}
+DEBUG:root:{'default': {'ENGINE': 'django.db.backends.postgresql', 'NAME': 'da5jioe3f9c8b1', 'PASSWORD': 'Nd-lC2CK21tsJ6O_77GW9C2qJg', 'USER': 'xoehsgqkkprkxy', 'PORT': '5432', 'HOST': 'ec2-50-17-253-74.compute-1.amazonaws.com'}}
+WARNING:py.warnings:C:\Python34\lib\importlib\_bootstrap.py:321: RemovedInDjango110Warning: django.core.context_processors is deprecated in favor of django.template.context_processors.
+  return f(*args, **kwds)
+
+WARNING:django.request:Not Found: /favicon.ico
+ERROR:django.request:Internal Server Error: /profile/
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\django\core\urlresolvers.py", line 586, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'marinehowscript.marinehow'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\django\template\defaulttags.py", line 507, in render
+    current_app=current_app)
+  File "C:\Python34\lib\site-packages\django\core\urlresolvers.py", line 596, in reverse
+    key)
+django.core.urlresolvers.NoReverseMatch: 'marinehowscript.marinehow' is not a registered namespace
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\django\core\handlers\base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Python34\lib\site-packages\django\core\handlers\base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Olek\Desktop\marinehow\marinehow\views.py", line 25, in profile
+    return render(request, 'marinehow/please_login.html')
+  File "C:\Python34\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "C:\Python34\lib\site-packages\django\template\loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "C:\Python34\lib\site-packages\django\template\backends\django.py", line 95, in render
+    return self.template.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 206, in render
+    return self._render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "C:\Python34\lib\site-packages\django\template\loader_tags.py", line 173, in render
+    return compiled_parent._render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "C:\Python34\lib\site-packages\django\template\loader_tags.py", line 69, in render
+    result = block.nodelist.render(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "C:\Python34\lib\site-packages\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "C:\Python34\lib\site-packages\django\template\defaulttags.py", line 513, in render
+    six.reraise(*exc_info)
+  File "C:\Python34\lib\site-packages\django\utils\six.py", line 686, in reraise
+    raise value
+  File "C:\Python34\lib\site-packages\django\template\defaulttags.py", line 499, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Python34\lib\site-packages\django\core\urlresolvers.py", line 600, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "C:\Python34\lib\site-packages\django\core\urlresolvers.py", line 508, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns))
+django.core.urlresolvers.NoReverseMatch: Reverse for 'register' with arguments '()' and keyword arguments '{}' not found. 0 pattern(s) tried: []
