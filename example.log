@@ -2060,3 +2060,29 @@ Traceback (most recent call last):
   File "C:\Python34\lib\site-packages\django\core\urlresolvers.py", line 508, in _reverse_with_prefix
     (lookup_view_s, args, kwargs, len(patterns), patterns))
 django.core.urlresolvers.NoReverseMatch: Reverse for 'register' with arguments '()' and keyword arguments '{}' not found. 0 pattern(s) tried: []
+DEBUG:root:{'default': {'NAME': 'da5jioe3f9c8b1', 'PASSWORD': 'Nd-lC2CK21tsJ6O_77GW9C2qJg', 'HOST': 'ec2-50-17-253-74.compute-1.amazonaws.com', 'ENGINE': 'django.db.backends.postgresql', 'PORT': '5432', 'USER': 'xoehsgqkkprkxy'}}
+DEBUG:root:{'default': {'NAME': 'da5jioe3f9c8b1', 'ENGINE': 'django.db.backends.postgresql', 'PORT': '5432', 'PASSWORD': 'Nd-lC2CK21tsJ6O_77GW9C2qJg', 'USER': 'xoehsgqkkprkxy', 'HOST': 'ec2-50-17-253-74.compute-1.amazonaws.com'}}
+WARNING:py.warnings:C:\Python34\lib\importlib\_bootstrap.py:321: RemovedInDjango110Warning: django.core.context_processors is deprecated in favor of django.template.context_processors.
+  return f(*args, **kwds)
+
+DEBUG:root:{'default': {'NAME': 'da5jioe3f9c8b1', 'HOST': 'ec2-50-17-253-74.compute-1.amazonaws.com', 'ENGINE': 'django.db.backends.postgresql', 'USER': 'xoehsgqkkprkxy', 'PORT': '5432', 'PASSWORD': 'Nd-lC2CK21tsJ6O_77GW9C2qJg'}}
+WARNING:py.warnings:C:\Python34\lib\importlib\_bootstrap.py:321: RemovedInDjango110Warning: django.core.context_processors is deprecated in favor of django.template.context_processors.
+  return f(*args, **kwds)
+
+DEBUG:root:{'default': {'PORT': '5432', 'NAME': 'da5jioe3f9c8b1', 'ENGINE': 'django.db.backends.postgresql', 'USER': 'xoehsgqkkprkxy', 'PASSWORD': 'Nd-lC2CK21tsJ6O_77GW9C2qJg', 'HOST': 'ec2-50-17-253-74.compute-1.amazonaws.com'}}
+WARNING:py.warnings:C:\Python34\lib\importlib\_bootstrap.py:321: RemovedInDjango110Warning: django.core.context_processors is deprecated in favor of django.template.context_processors.
+  return f(*args, **kwds)
+
+DEBUG:root:{'default': {'NAME': 'da5jioe3f9c8b1', 'ENGINE': 'django.db.backends.postgresql', 'PASSWORD': 'Nd-lC2CK21tsJ6O_77GW9C2qJg', 'HOST': 'ec2-50-17-253-74.compute-1.amazonaws.com', 'PORT': '5432', 'USER': 'xoehsgqkkprkxy'}}
+WARNING:py.warnings:C:\Python34\lib\importlib\_bootstrap.py:321: RemovedInDjango110Warning: django.core.context_processors is deprecated in favor of django.template.context_processors.
+  return f(*args, **kwds)
+
+DEBUG:root:{'default': {'PASSWORD': 'Nd-lC2CK21tsJ6O_77GW9C2qJg', 'USER': 'xoehsgqkkprkxy', 'HOST': 'ec2-50-17-253-74.compute-1.amazonaws.com', 'ENGINE': 'django.db.backends.postgresql', 'PORT': '5432', 'NAME': 'da5jioe3f9c8b1'}}
+WARNING:py.warnings:C:\Python34\lib\importlib\_bootstrap.py:321: RemovedInDjango110Warning: django.core.context_processors is deprecated in favor of django.template.context_processors.
+  return f(*args, **kwds)
+
+DEBUG:root:{'default': {'NAME': 'da5jioe3f9c8b1', 'USER': 'xoehsgqkkprkxy', 'ENGINE': 'django.db.backends.postgresql', 'PORT': '5432', 'PASSWORD': 'Nd-lC2CK21tsJ6O_77GW9C2qJg', 'HOST': 'ec2-50-17-253-74.compute-1.amazonaws.com'}}
+DEBUG:root:{'default': {'HOST': 'ec2-50-17-253-74.compute-1.amazonaws.com', 'NAME': 'da5jioe3f9c8b1', 'USER': 'xoehsgqkkprkxy', 'PORT': '5432', 'ENGINE': 'django.db.backends.postgresql', 'PASSWORD': 'Nd-lC2CK21tsJ6O_77GW9C2qJg'}}
+WARNING:py.warnings:C:\Python34\lib\importlib\_bootstrap.py:321: RemovedInDjango110Warning: django.core.context_processors is deprecated in favor of django.template.context_processors.
+  return f(*args, **kwds)
+

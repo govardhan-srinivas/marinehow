@@ -6,7 +6,7 @@
   {% if question_list %}
     <ul>
       {% for question in question_list %}
-        <li> <a href="{%url 'marinehow:question' question.id%}">{{ question|lower|truncatewords:'10'}}</a></li>
+        <li> <a href="{%url 'marinehow:question' question.id%}">{{ question|lower|truncatewords:'22'}}</a></li>
       {% endfor %}
     </ul>
     <span class="step-links">
