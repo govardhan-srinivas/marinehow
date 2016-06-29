@@ -3,14 +3,14 @@
 
 {% block content %}
 
-  <h2>Please select question for join conversation :</h2>
+  <center><h2>Please select question for join conversation :</h2></center>
   {% if question_list %}
     <ul>
       {% for question in question_list %}
         <li> <a href="{%url 'marinehow:question' question.id%}">{{ question|lower|truncatewords:'22'}}</a></li>
       {% endfor %}
     </ul>
-	{% bootstrap_paginate page_obj range=10 show_prev_next="false" show_first_last="true" %}
+	<center>{% bootstrap_paginate page_obj range=10 show_prev_next="false" show_first_last="true" %}</center>
   {% else %}
     <p>No questions are available</p>
   {% endif %}
